@@ -1,6 +1,5 @@
 - name: varibles
-  hosts: local
-  connection: local
+  hosts: frontend
   vars: 
     cousrse: AWS with DevOps
     date: may-29
