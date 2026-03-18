@@ -1,5 +1,5 @@
 - name: varibles
-  hosts: locallost
+  hosts: local
   collections: loacal
   vars: 
     cousrse: AWS with DevOps
