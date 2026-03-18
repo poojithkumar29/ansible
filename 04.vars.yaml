@@ -1,6 +1,6 @@
 - name: varibles
   hosts: local
-  collection: local
+  connection: local
   vars: 
     cousrse: AWS with DevOps
     date: may-29
