@@ -1,0 +1,11 @@
+- name: varibles
+  hosts: locallost
+  collections: loacal
+  vars: 
+    cousrse: AWS with DevOps
+    date: may-29
+    duration: 120hr
+  tasks: 
+    - name: varibles
+      ansible.builtin.debug:
+      msg: "cousrse name is : {{ cousrse }}, Duration: {{ duration }},Date: {{ date }} "
