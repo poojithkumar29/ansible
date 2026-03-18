@@ -8,4 +8,4 @@
   tasks: 
     - name: varibles
       ansible.builtin.debug:
-      msg: "cousrse name is : {{ cousrse }}, Duration: {{ duration }},Date: {{ date }} "
+        msg: "cousrse name is : {{ cousrse }}, Duration: {{ duration }},Date: {{ date }} "
