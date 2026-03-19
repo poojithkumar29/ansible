@@ -1,0 +1,18 @@
+- name: Using prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: What is your username
+      private: false
+    - name: Password
+      prompt: Enter Password
+      private: true
+    tasks: 
+      - name: credentials
+        ansiible.builtin.debug:
+          msg: "Hello,username is: {{ username }},Password is : {{ password }}"
+
+
+
+  

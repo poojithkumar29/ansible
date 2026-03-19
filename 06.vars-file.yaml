@@ -1,0 +1,8 @@
+- name: Using Course File 
+  hosts: frontend
+  vars_files:
+  - course.yaml
+  tasks: 
+    - name: print Course info
+      ansible.builtin.debug:
+        msg: "Course Nmae is : {{ Course }}, Duration is : {{ Duration }}"

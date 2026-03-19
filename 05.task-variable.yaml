@@ -1,0 +1,11 @@
+- name: Task level variable
+  hosts: frontend
+  vars: 
+    course: Aws DevOps
+    duration: 120hrs
+    Lecture: Sivaa reddy
+  tasks: 
+    - name: print the course info
+      ansible.builtin.debug:
+      msg: "course Name is :{{ course }}, DUration of the Course {{ duration }}"
+  
