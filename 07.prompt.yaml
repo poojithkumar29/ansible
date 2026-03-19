@@ -11,7 +11,7 @@
 
   tasks: 
     - name: credentials
-      ansiible.builtin.debug:
+      ansible.builtin.debug:
         msg: "Hello,username is: {{ username }},Password is : {{ Password }}"
 
 
