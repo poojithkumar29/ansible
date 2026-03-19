@@ -12,7 +12,7 @@
   tasks: 
     - name: credentials
       ansiible.builtin.debug:
-        msg: "Hello,username is: {{ username }},Password is : {{ password }}"
+        msg: "Hello,username is: {{ username }},Password is : {{ Password }}"
 
 
 
