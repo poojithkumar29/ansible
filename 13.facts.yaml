@@ -1,0 +1,15 @@
+- name: Using facts
+  hosts: local
+  connection: local
+  tasks:
+    - name:  install nginx
+      ansible.builtin.dnf:
+        name: nginx
+        sate: present
+      when: ansible_os_family ==" Redhat"
+    - name:  install nginx
+      ansible.builtin.apt:
+        name: nginx
+        sate: present
+      when: ansible_os_family ==" Redhat"
+
