@@ -4,8 +4,8 @@
   vars:
     technologies: devops,aws,shell,ansible
   tags:
-      Application: payment
-      Environment: dev
+    Application: payment
+    Environment: dev
   tasks: 
     - name: Default variable
       ansible.builtin.debug:
