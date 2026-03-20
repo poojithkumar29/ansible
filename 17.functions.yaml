@@ -3,9 +3,15 @@
   connection: local
   vars:
     technologies: devops,aws,shell,ansible
-  tags:
-    Application: payment
-    Environment: dev
+    tags:
+      Application: payment
+      Environment: dev
+    listTags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
+    
   tasks: 
     - name: Default variable
       ansible.builtin.debug:
@@ -18,6 +24,10 @@
     - name: map to list
       ansible.builtin.debug:
         msg: "The list is : {{ tags | dict2items }}"
+    
+    - name: list to map
+      ansible.builtin.debug:
+        msg: "tagmap are: {{ listtags | items2dict }}"
   
   
 
