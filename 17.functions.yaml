@@ -6,9 +6,6 @@
   tags:
       Application: payment
       Environment: dev
-
-    
-   
   tasks: 
     - name: Default variable
       ansible.builtin.debug:
