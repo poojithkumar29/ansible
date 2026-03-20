@@ -1,0 +1,20 @@
+- name: Various Datatypes
+  hosts: local
+  connection: local
+  vars:
+    course: "ansible" #string
+    duration: 10hrs  #number
+    Traineer: "siva"
+    IS_live: true #boolean
+    tools: # list 
+     -linux
+     -shell
+     -ansible
+    concepts: #map or dit
+      cloud: aws
+      cm: ansible
+  tasks:
+    - name: print course info
+      ansible.builtin.debug:
+        msg: "Course name is: {{ course }}, Duration is: {{ duration }}, Traineer is : {{ Traineer }}, Tools  are : {{ tools }}, Concepts: {{ concepts }} "
+
