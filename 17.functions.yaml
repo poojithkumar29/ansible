@@ -1,7 +1,8 @@
 - name: Functions
   hosts: local
   connection: local
+
   tasks: 
     - name: default function
       ansible.builtin.debug:
-        msg: " is: {{ name }}"
+        msg: " is: {{ name | default('poojith') }}"
