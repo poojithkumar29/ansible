@@ -1,6 +1,7 @@
 - name: Using facts
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name:  install nginx
       ansible.builtin.dnf:
