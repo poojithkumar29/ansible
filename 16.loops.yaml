@@ -1,11 +1,12 @@
 - name: INstall and remove packages
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: install and remove
       ansible.builtin.package:
         name: "{{ item.name }}" 
-        state: "{{ ietm.state }}"
+        state: "{{ item.state }}"
       loop:
       - { name: "mysql",state: "absent"}
       - { name: "nodejs",state: "latest"}
