@@ -6,11 +6,11 @@
     - name:  install nginx
       ansible.builtin.dnf:
         name: nginx
-        sate: present
+        state: present
       when: ansible_os_family == "RedHat"
     - name:  install nginx
       ansible.builtin.apt:
         name: nginx
-        sate: present
+        state: present
       when: ansible_os_family == "RedHat"
 
