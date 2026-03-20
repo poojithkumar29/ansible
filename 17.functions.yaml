@@ -17,7 +17,7 @@
         msg: "List: {{ technologies | split(',') }}"
 
     - name: map to list
-      ansible.builti.debug:
+      ansible.builtin.debug:
         msg: "list: {{ tags | dict2items }}"
 
     - name: List into map
