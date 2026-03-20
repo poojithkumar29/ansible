@@ -3,6 +3,8 @@
   connection: local
   vars:
     technologies: devops,aws,shell,ansible
+    name: "Poojith kumar p"
+    gmail: "poojithkumar.p123@gmail.com"
     tags:
       Application: payment
       Environment: dev
@@ -36,3 +38,12 @@
       ansible.builtin.copy:
         dest: ./student-json.yaml
         content: "{{ student_yaml | to_json }}"
+
+    - name: convert into uppercase
+      ansible.builtin.debug:
+        msg: " {{ name | upper }}"
+
+    - name: convert into lower
+      ansible.builtin.debug:
+        msg: "{{ gmail | lower }}"
+
