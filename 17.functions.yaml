@@ -27,7 +27,7 @@
     
     - name: list to map
       ansible.builtin.debug:
-        msg: "tagmap are: {{ listtags | items2dict }}"
+        msg: "tagmap are: {{ listTags | items2dict }}"
   
   
 
